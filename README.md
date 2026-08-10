@@ -49,3 +49,12 @@ During the deployment process, a few initial challenges were encountered and suc
 3. **Management Interface Connectivity & License Activation:**
    - **Issue:** `port1` initially retained a `0.0.0.0` IP address under DHCP.
    - **Resolution:** Configured network interface settings manually via CLI to obtain a valid local management IP, enabled HTTPS/SSH access, and registered the instance using a **FortiCloud Evaluation License**.
+  
+## 📸 Lab Screenshots
+
+- **FortiGate Dashboard (GUI):**
+  ![FortiGate Dashboard](<img width="1906" height="910" alt="Screenshot 2026-08-10 173548" src="https://github.com/user-attachments/assets/007792c7-ff5c-4f0e-8dff-fab2af138519" />)
+
+- **CLI Initial Setup:**
+  ![FortiGate CLI](<img width="957" height="1018" alt="Screenshot 2026-08-10 162952" src="https://github.com/user-attachments/assets/d37be50f-9fb3-4c9e-bbc9-7a0e34ae9204" />)
+
