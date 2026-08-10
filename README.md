@@ -33,3 +33,19 @@ Linked the VM instance with FortiCloud for full feature evaluation.
 Verified system status, interface assignments, and admin dashboard controls.
 
 Created as part of my continuous learning in Network Security and Fortinet Ecosystem.
+
+## 🔍 Troubleshooting & Key Learnings
+
+During the deployment process, a few initial challenges were encountered and successfully resolved:
+
+1. **FortiCloud Support Contract Barrier:**
+   - **Issue:** Unable to download standard firmware images due to a missing paid support contract requirement on the main portal.
+   - **Resolution:** Navigated to the **VM Images** section and selected the correct `.ovf.zip` package (`FortiGate-VM64`) for VMware ESXi evaluation.
+
+2. **CLI Password Security Policy:**
+   - **Issue:** Initial password change failed during first boot via CLI.
+   - **Resolution:** Identified FortiOS 7.6 strict password enforcement requiring at least 12 characters, including uppercase, lowercase, digits, and special symbols.
+
+3. **Management Interface Connectivity & License Activation:**
+   - **Issue:** `port1` initially retained a `0.0.0.0` IP address under DHCP.
+   - **Resolution:** Configured network interface settings manually via CLI to obtain a valid local management IP, enabled HTTPS/SSH access, and registered the instance using a **FortiCloud Evaluation License**.
